@@ -121,5 +121,3 @@ Pruebas incluyen:
 MIT License - Libre uso y modificación
 
 ---
-
-Este README.md está listo para copiar y pegar directamente en tu proyecto. Incluye todos los elementos clave de tu implementación actual y deja espacio para futuras expansiones.

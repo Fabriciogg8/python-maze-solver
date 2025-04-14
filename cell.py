@@ -3,7 +3,7 @@ from point import Point
 
 class Cell:
 
-    def __init__(self, x1, x2, y1, y2, win):
+    def __init__(self, x1, x2, y1, y2, win=None):
         self.has_left_wall = True
         self.has_right_wall = True
         self.has_top_wall = True
@@ -16,6 +16,8 @@ class Cell:
     
     def draw(self):
         """Draws the cell walls in the associated window."""
+        if self._win is None:  # No dibujar si no hay ventana
+            return
         if self.has_left_wall:
             self._win.draw_line(Line(Point(self._x1, self._y1), Point(self._x1, self._y2)), "black")
         if self.has_right_wall:
